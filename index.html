@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>PH203</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout" style="background-color: #28282B;">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="header_white_section">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="header_information">
+                           <ul>
+                              <li> Abhay Patil , 1901CS01 </li>
+                              <li> OMKAR DESHPANDE , 1901EE43</li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo"> <a href="index.html" style="color: white;font-size: 25px;">PH203 PROJECT</a></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <div class="menu-area">
+                        <div class="limit-box">
+                           <nav class="main-menu">
+                              <ul class="menu-area-main">
+                                 <li class="active"> <a href="#">Home</a> </li>
+                                 <li><a href="#contact">Contact </a></li>
+                              </ul>
+                           </nav>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- end header inner -->
+      </header>
+      <!-- end header -->
+      <section style="background-color: #28282B;">
+         <div class="banner-main">
+            <img src="images/banner.jpg" alt="#"/>
+            <br><br><br><br>
+            <div class="container">
+               <div class="text-bg">
+                  <h1 style="font-size: 40px;">Throughput and Pumping Speed <br> In A Vacuum Chamber</h1>
+
+                  <br><br><br><br>
+      
+               <!-- Suction chamber -->
+
+                  <div class="container">
+                     <form class="main-form">
+                        <h3>Suction Chamber</h3>
+                        <div class="row dialogS">
+                           <div class="col-md-9">
+                              <div class="row">
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <label >Rotational Speed:</label>
+                                    <input class="form-control" placeholder="" type="number" >
+                                 </div>
+
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <label >Input Pressure (in Pa):</label>
+                                    <input class="form-control" placeholder="" type="number" >
+                                 </div>
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <label >Output Pressure (in Pa):</label>
+                                    <input class="form-control" placeholder="" type="number" >
+                                 </div>
+
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <label >Dead Space Volume (in m<sup>3</sup>):</label>
+                                    <input class="form-control" placeholder="" type="number" >
+                                 </div>
+
+                                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <label >Suction Chamber Volume (in m<sup>3</sup>):</label>
+                                    <input class="form-control" placeholder="" type="number" >
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                              <a onclick="suction_chamber()">Calculate</a>
+                           </div>
+
+                           <div style="text-align: left;padding-left: 20px;">
+                              <ul style="font-size: 14px;font-weight: bold;">
+                                 <li>Throughput :<span class="g1" style="color: black; font-size: 16px;" >NA</span></li>
+                                 <li>Pumping Speed :<span class="g2" style="color: black; font-size: 16px;"  >NA</span></li>
+                              </ul>
+                           </div>
+
+                        </div>
+
+                     </form>
+                  </div>
+
+                  <div style="padding: 50px;"> </div>
+                  
+                                 <!-- Gas Equation -->
+
+                                 <div class="container">
+                                    <form class="main-form">
+                                       <h3>Gas Equation</h3>
+                                       <div class="row dialogG">
+                                          <div class="col-md-9">
+                                             <div class="row">
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                                   <label >Moles Of Gas</label>
+                                                   <input class="form-control" placeholder="" type="number" >
+                                                </div>
+               
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                                   <label >Pressure (in Pa)</label>
+                                                   <input class="form-control" placeholder="" type="number" >
+                                                </div>
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                                   <label >Temperature (in K)</label>
+                                                   <input class="form-control" placeholder="" type="number" >
+                                                </div>
+               
+                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+                                                   <label >Time (s)</label>
+                                                   <input class="form-control" placeholder="" type="number" >
+                                                </div>
+               
+                                             </div>
+                                          </div>
+                                          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                             <a onclick="gas_equation()">Calculate</a>
+                                          </div>
+               
+                                          <div style="text-align: left;padding-left: 20px;">
+                                             <ul style="font-size: 14px;font-weight: bold;">
+                                                <li>Throughput :<span class="g1" style="color: black; font-size: 16px;" >NA</span></li>
+                                                <li>Pumping Speed :<span class="g2" style="color: black; font-size: 16px;"  >NA</span></li>
+                                             </ul>
+                                          </div>
+               
+                                       </div>
+               
+                                    </form>
+                                 </div>
+
+
+
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <br><br><br><br><br><br><br><br>
+
+      <!-- footer -->
+      <footer>
+         <div id="contact" class="footer">
+            <div class="container">
+               <div class="row pdn-top-30">
+
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                     <div class="Follow">
+                        <h3>CONTACT US</h3>
+                        <ul>
+                           <li>Name: Abhay Patil </li>
+                           <li>Roll No.: 1901CS01</li>
+                           <li>Email Id: abhay_1901cs01@iitp.ac.in</li>
+
+                        </ul>
+                        <br>
+                        <ul>
+                           <li>OMKAR DESHPANDE</li>
+                           <li>1901EE43</li>
+                           <li>Email Id: omkar_1901ee43@iitp.ac.in</li>
+                        </ul>
+                     </div>
+                  </div>
+                
+
+               </div>
+
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script>
+         $(document).ready(function() {
+           var owl = $('.owl-carousel');
+           owl.owlCarousel({
+             margin: 10,
+             nav: true,
+             loop: true,
+             responsive: {
+               0: {
+                 items: 1
+               },
+               600: {
+                 items: 2
+               },
+               1000: {
+                 items: 3
+               }
+             }
+           })
+         })
+
+         //function for suction chamber
+
+         var dialogS = document.querySelector('.dialogS')
+
+			function suction_chamber(){
+			try{
+				var inputs = dialogS.querySelectorAll('input');
+				if(inputs[1].value == 0) throw "Input Pressure can't be zero";
+				var Q = inputs[0].value*(inputs[4].value*inputs[1].value-inputs[3].value*inputs[2].value)
+				var S = Q/inputs[1].value
+				console.log(Q);
+				dialogS.querySelector('.g1').textContent = Q+" W";
+				dialogS.querySelector('.g2').textContent = S+" m3/s";
+				
+			}
+			catch(err){
+				MessageChannel.innerHTML = "Invalid Input:" + err;
+				window.alert("Invalid Input: "+err);
+			}
+		}
+
+
+      //function for gas equation
+
+		var dialogG = document.querySelector('.dialogG')
+
+      function gas_equation(){
+      try{
+            var inputs = dialogG.querySelectorAll('input');
+            if(inputs[1].value == 0) throw "Pressure can't be zero";
+            if(inputs[3].value == 0) throw "Time can't be zero";
+            var Q = (inputs[0].value*8.314*inputs[2].value)/inputs[3].value;
+            var S = Q/inputs[1].value;
+            dialogG.querySelector('.g1').textContent = Q+" W";
+            dialogG.querySelector('.g2').textContent = S+" m3/s";
+      }
+      catch(err){
+            MessageChannel.innerHTML = "Invalid Input:" + err;
+            window.alert("Invalid Input: "+err);
+      }
+      }
+
+
+
+      </script>
+     
+   </body>
+</html>
